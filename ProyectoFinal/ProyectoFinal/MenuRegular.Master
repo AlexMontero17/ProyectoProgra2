@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuRegular.master.cs" Inherits="ProyectoFinal.MenuRegular" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="CSS/Estilos.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <ul>
+                  <li><a href="InicioRegular.aspx">Inicio</a></li>
+                  <li><a href="#news">Facturas</a></li>
+                  <li><a href="UsuarioRegular.aspx">Informacion Usuario</a></li>
+                    </div>
+                  </li>
+                </ul>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuAdmin.master.cs" Inherits="ProyectoFinal.MenuAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="CSS/Estilos.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <ul>
+                  <li><a href="InicioAdmin.aspx">Inicio</a></li>
+                  <li><a href="#news">Facturacion</a></li>
+
+                    <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="Productos.aspx">Registro de productos actuales</a>
+                        <a href="Modificar registro de productos.aspx">Modificar Registros</a>
+                    </div>
+                  </li>
+                    
+
+                    <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Clientes</a>
+                    <div class="dropdown-content">
+                        <a href="ClientesExistentes.aspx">Registro de clientes actuales</a>
+                        <a href="ModificarClientes.aspx">Modificar Registros</a>
+                    </div>
+                  </li>
+                  <li><a href="ModificarUsuarios.aspx">Accesos</a></li>
+
+
+
+                </ul>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
